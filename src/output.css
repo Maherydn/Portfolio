@@ -873,10 +873,6 @@ video {
   height: max-content;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -1809,6 +1805,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1973,39 +1973,9 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
-}
-
-.bg-fuchsia-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(232 121 249 / var(--tw-bg-opacity));
-}
-
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
-.bg-lime-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(163 230 53 / var(--tw-bg-opacity));
-}
-
-.bg-rose-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 113 133 / var(--tw-bg-opacity));
-}
-
-.bg-sky-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
-}
-
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .bg-slate-700\/10 {
@@ -2022,14 +1992,29 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.bg-teal-400\/10 {
+  background-color: rgb(45 212 191 / 0.1);
 }
 
-.bg-black {
+.bg-slate-400\/10 {
+  background-color: rgb(148 163 184 / 0.1);
+}
+
+.bg-slate-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.bg-slate-800\/50 {
+  background-color: rgb(30 41 59 / 0.5);
+}
+
+.bg-slate-800\/40 {
+  background-color: rgb(30 41 59 / 0.4);
+}
+
+.bg-slate-800\/30 {
+  background-color: rgb(30 41 59 / 0.3);
 }
 
 .bg-gradient-to-br {
@@ -2398,6 +2383,10 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.leading-5 {
+  line-height: 1.25rem;
+}
+
 .leading-9 {
   line-height: 2.25rem;
 }
@@ -2406,23 +2395,13 @@ video {
   color: rgb(51 102 153 / .35);
 }
 
+.text-blue-400\/50 {
+  color: rgb(96 165 250 / 0.5);
+}
+
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
-.text-blue-700\/50 {
-  color: rgb(29 78 216 / 0.5);
-}
-
-.text-blue-900 {
-  --tw-text-opacity: 1;
-  color: rgb(30 58 138 / var(--tw-text-opacity));
-}
-
-.text-fuchsia-900 {
-  --tw-text-opacity: 1;
-  color: rgb(112 26 117 / var(--tw-text-opacity));
 }
 
 .text-gray-100 {
@@ -2445,29 +2424,9 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.text-lime-900 {
-  --tw-text-opacity: 1;
-  color: rgb(54 83 20 / var(--tw-text-opacity));
-}
-
-.text-rose-900 {
-  --tw-text-opacity: 1;
-  color: rgb(136 19 55 / var(--tw-text-opacity));
-}
-
-.text-sky-900 {
-  --tw-text-opacity: 1;
-  color: rgb(12 74 110 / var(--tw-text-opacity));
-}
-
 .text-slate-400 {
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
-}
-
-.text-slate-500 {
-  --tw-text-opacity: 1;
-  color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
 .text-slate-600 {
@@ -2475,9 +2434,9 @@ video {
   color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
-.text-slate-900 {
+.text-teal-300 {
   --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
+  color: rgb(94 234 212 / var(--tw-text-opacity));
 }
 
 .text-transparent {
@@ -2489,24 +2448,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-800 {
+.text-slate-500 {
   --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2979,10 +2923,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-full {
-    width: 100%;
-  }
-
   .sm\:w-1\/2 {
     width: 50%;
   }
