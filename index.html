@@ -155,20 +155,20 @@
             </div>
             <div class=" sm:w-1/2 w-full px-4 py-2 flex flex-col space-y-4 rounded-lg border border-slate-600/50"  data-aos="fade-up" >
                 <h3 class="text-slate-600 text-2xl font-bold">Send us a message </h3>
-                <form action="" class="flex flex-col gap-4 w-full px-4" >
+                <form action="./src/contact.php" method="POST" class="flex flex-col gap-4 w-full px-4">
                     <div class="w-full">
-                        <input type="text" placeholder="Full name" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-1 focus:outline-none  focus:ring-violet-600 focus:border-violet-600 block w-full px-2 py-1 h-10 md:text-lg text-base">
+                        <input type="text" name="name" placeholder="Full name" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-1 focus:outline-none  focus:ring-violet-600 focus:border-violet-600 block w-full px-2 py-1 h-10 md:text-lg text-base" required>
                     </div>
                     <div class="w-full">
-                        <input type="text" placeholder="Your email" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-1 focus:outline-none  focus:ring-violet-600 focus:border-violet-600 block w-full px-2 py-1 h-10 md:text-lg text-base">
+                        <input type="email" name="email" placeholder="Your email" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-1 focus:outline-none  focus:ring-violet-600 focus:border-violet-600 block w-full px-2 py-1 h-10 md:text-lg text-base" required>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <label for="message" class="text-gray-400 text-base">Tell us more about your projet</label>
-                        <textarea id="message" type="text" placeholder="Your message" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-1 focus:outline-none  focus:ring-violet-600 focus:border-violet-600 block w-full px-2 py-1 h-28 resize-none md:text-lg text-base "></textarea>
+                        <label for="message" class="text-gray-400 text-base">Tell us more about your project</label>
+                        <textarea id="message" name="message" placeholder="Your message" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-1 focus:outline-none  focus:ring-violet-600 focus:border-violet-600 block w-full px-2 py-1 h-28 resize-none md:text-lg text-base" required></textarea>
                     </div>
-                    <input type="button" value="Submit" 
-                    class="px-6 py-2 border-blue-500 border text-blue-500 rounded transition duration-300 hover:bg-blue-700 hover:text-white focus:outline-none w-32 mx-auto">
+                    <input type="submit" value="Submit" class="px-6 py-2 border-blue-500 border text-blue-500 rounded transition duration-300 hover:bg-blue-700 hover:text-white focus:outline-none w-32 mx-auto">
                 </form>
+                
             </div>
         </div>
     </div>
